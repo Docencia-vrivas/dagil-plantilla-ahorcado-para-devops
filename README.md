@@ -83,3 +83,66 @@ public static final String muestraLetrasPorDescubrir(final String palabra, final
 */
 public static final int numErroresCometidos(final String palabra, final String letrasDichas)
 ```
+
+## Ejemplo de ejecución del programa:
+
+```bash
+Indique la posición de la palabra a adivinar (entre 0 y 3):
+1
+
+---------------------------------------------
+Letras por descubrir: ---------
+Errores cometidos: 0 de 5 permitidos.
+Letras que ya has dicho:
+Escribe una letra: a
+¡¡BIEN!! La letra a estaba en la palabra que buscamos.
+---------------------------------------------
+Letras por descubrir: -----a---
+Errores cometidos: 0 de 5 permitidos.
+Letras que ya has dicho: a
+Escribe una letra: d
+¡¡BIEN!! La letra d estaba en la palabra que buscamos.
+---------------------------------------------
+Letras por descubrir: --d--ad--
+Errores cometidos: 0 de 5 permitidos.
+Letras que ya has dicho: ad
+Escribe una letra: s
+¡¡ERROR!! La letra s no está en la palabra que buscamos.
+---------------------------------------------
+Letras por descubrir: --d--ad--
+Errores cometidos: 1 de 5 permitidos.
+Letras que ya has dicho: ads
+Escribe una letra: u
+¡¡ERROR!! La letra u no está en la palabra que buscamos.
+---------------------------------------------
+Letras por descubrir: --d--ad--
+Errores cometidos: 2 de 5 permitidos.
+Letras que ya has dicho: adsu
+Escribe una letra: e
+¡¡BIEN!! La letra e estaba en la palabra que buscamos.
+---------------------------------------------
+Letras por descubrir: --de-ad--
+Errores cometidos: 2 de 5 permitidos.
+Letras que ya has dicho: adsue
+Escribe una letra: c
+¡¡ERROR!! La letra c no está en la palabra que buscamos.
+---------------------------------------------
+Letras por descubrir: --de-ad--
+Errores cometidos: 3 de 5 permitidos.
+Letras que ya has dicho: adsuec
+Escribe una letra: n
+¡¡BIEN!! La letra n estaba en la palabra que buscamos.
+---------------------------------------------
+Letras por descubrir: --denad--
+Errores cometidos: 3 de 5 permitidos.
+Letras que ya has dicho: adsuecn
+Escribe una letra: o
+¡¡BIEN!! La letra o estaba en la palabra que buscamos.
+---------------------------------------------
+Letras por descubrir: o-denado-
+Errores cometidos: 3 de 5 permitidos.
+Letras que ya has dicho: adsuecno
+Escribe una letra: r
+¡¡BIEN!! La letra r estaba en la palabra que buscamos.
+:) Acertaste la palabra: ordenador
+```
