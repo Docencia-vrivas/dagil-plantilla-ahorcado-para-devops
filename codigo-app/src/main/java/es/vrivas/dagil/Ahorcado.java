@@ -13,7 +13,7 @@ public final class Ahorcado {
      * @throws IllegalArgumentException Si pos<0
      * @throws IllegalArgumentException Si pos>=palabras.length
      */
-    public static String dameUnaPalabra(final String[] palabras, final int pos) throws IllegalArgumentException {
+    public static final String dameUnaPalabra(final String[] palabras, final int pos) throws IllegalArgumentException {
         if (pos < 0)
             throw new IllegalArgumentException("App:dameUnaPalabra: la posición solicitada no puede ser negativa.");
         if (pos >= palabras.length)
@@ -31,7 +31,7 @@ public final class Ahorcado {
      */
 
     // ESTE MÉTODO DEBES CORREGIRLO. SUS TESTS ESTÁN CORRECTOS.
-    static public boolean quedanLetrasPorDescubrir(final String palabra,
+    public static final boolean quedanLetrasPorDescubrir(final String palabra,
             final String letrasDichas) {
         int encontradas = 0;
         for (int i = 0; i < letrasDichas.length(); ++i) {

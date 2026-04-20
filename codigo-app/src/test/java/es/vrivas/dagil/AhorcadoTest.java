@@ -48,7 +48,7 @@ class AhorcadoTest {
 
     @Test
     public void letraEnPalabra_test() {
-        // Ejemplo de uso del método: Ahorcado.letraEnPalabra('a', "sarten");
+        // Ejemplo de uso del método: Ahorcado.letraEnPalabra('a', "sarten") debe devolver true;
 
         // @TODO Comprueba que para el valor NULL en la cadena devuelve false con cualquier letra que le des.
 

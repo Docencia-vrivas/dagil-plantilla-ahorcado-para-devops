@@ -4,6 +4,14 @@ Este programa implementa el juego del Ahorcado usando métodos susceptibles de s
 
 El objetivo es comprobar cómo cada vez que creamos los tests para un método y hacemos el correspondiente _commit_, se ejecuta automáticamente una _action_ en GitHub que hace el testeo automático.
 
+**Secciones de de este documento**
+
+- [Juego del Ahorcado en Java](#juego-del-ahorcado-en-java)
+  - [Ficheros en el paquete:](#ficheros-en-el-paquete)
+  - [Métodos dentro de Ahorcado.java](#métodos-dentro-de-ahorcadojava)
+  - [Ejemplo de ejecución del programa:](#ejemplo-de-ejecución-del-programa)
+  - [Ejercicios a realizar:](#ejercicios-a-realizar)
+
 ## Ficheros en el paquete:
 
 ```
@@ -146,3 +154,10 @@ Escribe una letra: r
 ¡¡BIEN!! La letra r estaba en la palabra que buscamos.
 :) Acertaste la palabra: ordenador
 ```
+
+## Ejercicios a realizar:
+
+- Escribe los tests que faltan en el método _public void letraEnPalabra_test()_ de _AhorcadoTest.java_
+- Escribe los tests que faltan en el método _public void numErroresCometidos_test_ de _AhorcadoTest.java_
+- Corrige el resultado devuelto por _public static final boolean quedanLetrasPorDescubrir_ de _Ahorcado.java_
+- Corrige el resultado devuelto por _public static final String muestraLetrasPorDescubrir_ de _Ahorcado.java_
