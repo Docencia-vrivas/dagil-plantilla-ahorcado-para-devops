@@ -48,13 +48,36 @@ class AhorcadoTest {
 
     @Test
     public void letraEnPalabra_test() {
-        assertFalse(Ahorcado.letraEnPalabra('a', null));
-        assertFalse(Ahorcado.letraEnPalabra('a', ""));
-        assertFalse(Ahorcado.letraEnPalabra('a', "c"));
-        assertFalse(Ahorcado.letraEnPalabra('a', "co"));
-        assertTrue(Ahorcado.letraEnPalabra('a', "a"));
-        assertTrue(Ahorcado.letraEnPalabra('a', "ahora"));
-        assertTrue(Ahorcado.letraEnPalabra('a', "loma"));
+        // Ejemplo de uso del método: Ahorcado.letraEnPalabra('a', "sarten");
+
+        // @TODO Comprueba que para el valor NULL en la cadena devuelve false con cualquier letra que le des.
+
+        // @TODO Comprueba que para la cadena vacía devuelve false
+
+        // @TODO Comprueba que la letra no aparece en una cadena de tamaño 1 que no la contiene
+
+        // @TODO Comprueba que la letra no aparece en una cadena de tamaño 2 que no la contiene
+
+        // @TODO Comprueba que la letra SI aparece en una cadena de tamaño 1 que la contiene
+
+        // @TODO Comprueba que la letra SI aparece en una cadena de tamaño mayor que 1 que sí la contiene
+
+        // @TODO Comprueba que la letra SI aparece en una cadena de tamaño mayor que 1 que sí la contiene en la últia posición.
+    }
+
+    @Test
+    public void numErroresCometidos_test() {
+        // Ejemplo de uso del método: Ahorcado.numErroresCometidos("casa", "cdfga") debe devolver 3;
+        // Para las pruebas, usa palabras en las que se repitan las letras, como: destornillador
+
+        // @TODO Comprueba que devuelve 0 errores
+
+        // @TODO Comprueba que devuelve 1 error
+
+        // @TODO Comprueba que devuelve 2 errores
+
+        // @TODO Comprueba que devuelve 10 errores 
+
     }
 
     @Test
@@ -66,12 +89,4 @@ class AhorcadoTest {
         assertEquals("-est----ll----", Ahorcado.muestraLetrasPorDescubrir("destornillador", "esltgs"));
     }
 
-    @Test
-    public void numErroresCometidos_test() {
-        assertEquals(0, Ahorcado.numErroresCometidos("casa", "a"));
-        assertEquals(1, Ahorcado.numErroresCometidos("casa", "csd"));
-        assertEquals(2, Ahorcado.numErroresCometidos("casa", "dcst"));
-        assertEquals(3, Ahorcado.numErroresCometidos("casa", "poi"));
-        assertEquals(0, Ahorcado.numErroresCometidos("destornillador", "destornillador"));
-    }
 }
