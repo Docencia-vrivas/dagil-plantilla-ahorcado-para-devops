@@ -157,7 +157,7 @@ Escribe una letra: r
 
 ## Ejercicios a realizar:
 
-- Escribe los tests que faltan en el método _public void letraEnPalabra_test()_ de _AhorcadoTest.java_
-- Escribe los tests que faltan en el método _public void numErroresCometidos_test_ de _AhorcadoTest.java_
-- Corrige el resultado devuelto por _public static final boolean quedanLetrasPorDescubrir_ de _Ahorcado.java_
-- Corrige el resultado devuelto por _public static final String muestraLetrasPorDescubrir_ de _Ahorcado.java_
+- Escribe los tests que faltan en el método `public void letraEnPalabra_test()` de _AhorcadoTest.java_
+- Escribe los tests que faltan en el método `public void numErroresCometidos_test` de _AhorcadoTest.java_
+- Corrige el resultado devuelto por `public static final boolean quedanLetrasPorDescubrir` de _Ahorcado.java_
+- Corrige el resultado devuelto por `public static final String muestraLetrasPorDescubrir` de _Ahorcado.java_
