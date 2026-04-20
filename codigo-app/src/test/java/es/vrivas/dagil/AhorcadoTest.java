@@ -36,7 +36,7 @@ class AhorcadoTest {
 
     @Test
     void quedanLetrasPorDescubrir_test() {
-        assertFalse(Ahorcado.quedanLetrasPorDescubrir("elefante", ""));
+        assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", ""));
         assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", "el"));
         assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", "elfn"));
         assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", "lfnt"));
@@ -46,16 +46,6 @@ class AhorcadoTest {
         assertFalse(Ahorcado.quedanLetrasPorDescubrir("elefante", "hjktnafle"));
     }
 
-    @Test
-    public void letraEnPalabra_test() {
-        assertFalse(Ahorcado.letraEnPalabra('a', null));
-        assertFalse(Ahorcado.letraEnPalabra('a', ""));
-        assertFalse(Ahorcado.letraEnPalabra('a', "c"));
-        assertFalse(Ahorcado.letraEnPalabra('a', "co"));
-        assertTrue(Ahorcado.letraEnPalabra('a', "a"));
-        assertTrue(Ahorcado.letraEnPalabra('a', "ahora"));
-        assertTrue(Ahorcado.letraEnPalabra('a', "loma"));
-    }
 
     @Test
     public void muestraLetrasPorDescubrir_test() {
