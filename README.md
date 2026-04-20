@@ -10,16 +10,16 @@ El objetivo es comprobar cómo cada vez que creamos los tests para un método y 
 pom.xml
 README.md
 .gitignore
-codigo-app
+codigo-app/
     |
-    +----src
+    +----src/
           |
-          +----main/java/es/vrivas/dagil
+          +----main/java/es/vrivas/dagil/
           |          |
           |          + Ahorcado.java
           |          + App.java
           |
-          +----test/java/es/vrivas/dagil
+          +----test/java/es/vrivas/dagil/
                      |
                      + AhorcadoTest.java
                      + AppTest.java
