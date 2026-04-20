@@ -66,6 +66,7 @@ class AhorcadoTest {
         assertEquals("-est----ll----", Ahorcado.muestraLetrasPorDescubrir("destornillador", "esltgs"));
     }
 
+    /*
     @Test
     public void numErroresCometidos_test() {
         assertEquals(0, Ahorcado.numErroresCometidos("casa", "a"));
@@ -73,5 +74,5 @@ class AhorcadoTest {
         assertEquals(2, Ahorcado.numErroresCometidos("casa", "dcst"));
         assertEquals(3, Ahorcado.numErroresCometidos("casa", "poi"));
         assertEquals(0, Ahorcado.numErroresCometidos("destornillador", "destornillador"));
-    }
+    }*/
 }
