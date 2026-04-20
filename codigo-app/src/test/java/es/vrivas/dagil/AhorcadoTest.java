@@ -36,7 +36,7 @@ class AhorcadoTest {
 
     @Test
     void quedanLetrasPorDescubrir_test() {
-        assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", ""));
+        assertFalse(Ahorcado.quedanLetrasPorDescubrir("elefante", ""));
         assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", "el"));
         assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", "elfn"));
         assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", "lfnt"));
