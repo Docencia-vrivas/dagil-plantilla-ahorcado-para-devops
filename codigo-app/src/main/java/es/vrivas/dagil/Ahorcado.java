@@ -30,7 +30,7 @@ public final class Ahorcado {
      * @return True si quedan letras por descubrir; false en otro caso.
      */
 
-    // ESTE MÉTODO DEBES CORREGIRLO. SUS TESTS ESTÁN CORRECTOS.
+    // ESTE MÉTODO DEBES CORREGIRLO PARA QUE PASE LOS TESTS (QUE ESTÁN BIEN ESCRITOS) SIN PROBLEMA.
     public static final boolean quedanLetrasPorDescubrir(final String palabra,
             final String letrasDichas) {
         int encontradas = 0;
@@ -40,31 +40,17 @@ public final class Ahorcado {
                     ++encontradas;
             }
         }
-        //@TODO: devuelve el valor correcto, que NO es siempre true.
+        //@TODO: Debes devolver el valor correcto, que NO es siempre true.
         return true;
     }
 
-    /**
-     * Comprueba si una letra aparece en una palabra.
-     * @param letra La letra a buscar.
-     * @param palabra La palabra en la que buscar.
-     * @return True si la letra aparece; false en caso contrario.
-     */
-    // ESTE MÉTODO ESTÁ CORRECTO. SUS TESTS DEBES CORREGIRLOS.
-    public static final boolean letraEnPalabra(final Character letra,
-            final String palabra) {
-        if (palabra == null)
-            return false;
-        return palabra.indexOf(letra, 0) != -1;
-    }
-
-    /**
+     /**
      * Genera una cadena con guiones en aquellas letras que faltan por descubrir.
      * @param palabra Palabra a adivinar.
      * @param letrasDichas Letras que ya ha dicho el jugador.
      * @return Cadena con guiones en las letras por descubrir y las letras ya descubiertas en su sitio.
      */
-    // ESTE MÉTODO DEBES CORREGIRLO. SUS TESTS ESTÁN CORRECTOS.
+    // ESTE MÉTODO DEBES CORREGIRLO PARA QUE PASE LOS TESTS (QUE ESTÁN BIEN ESCRITOS) SIN PROBLEMA.
     public static final String muestraLetrasPorDescubrir(final String palabra, final String letrasDichas) {
         String resultado = "";
         for (int i = 0; i < palabra.length(); ++i) {
@@ -82,9 +68,24 @@ public final class Ahorcado {
             }
         }
 
-        // @TODO Devuelve el resultado correcto, no siempre NULL
+        // @TODO Debes devolver el resultado correcto, que no es null
         return null;
     }
+    /**
+     * Comprueba si una letra aparece en una palabra.
+     * @param letra La letra a buscar.
+     * @param palabra La palabra en la que buscar.
+     * @return True si la letra aparece; false en caso contrario.
+     */
+    // ESTE MÉTODO ESTÁ CORRECTO, SIN EMBARGO SUS TESTS DEBES ESCRIBIRLOS.
+    public static final boolean letraEnPalabra(final Character letra,
+            final String palabra) {
+        if (palabra == null)
+            return false;
+        return palabra.indexOf(letra, 0) != -1;
+    }
+
+   
 
     /**
      * Devuelve el número de errores cometidos por las letras dichas que no están en la palabra.
@@ -92,7 +93,7 @@ public final class Ahorcado {
      * @param letrasDichas Letras que ha dicho el usuario.
      * @return Número de letras dichas que NO están en la palabra.
      */
-    // ESTE MÉTODO ESTÁ CORRECTO. SUS TESTS DEBES CORREGIRLOS.
+    // ESTE MÉTODO ESTÁ CORRECTO, SIN EMBARGO SUS TESTS DEBES ESCRIBIRLOS.
     public static final int numErroresCometidos(final String palabra, final String letrasDichas) {
         int numErrores = 0;
         for (int i = 0; i < letrasDichas.length(); ++i) {
