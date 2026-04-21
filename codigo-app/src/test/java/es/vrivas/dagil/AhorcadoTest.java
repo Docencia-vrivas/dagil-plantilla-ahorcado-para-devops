@@ -34,6 +34,7 @@ class AhorcadoTest {
 
     }
 
+    // Estos Tests están bien escritos, pero debes modificar el método quedanLetrasPorDescubrir para que se pasen correctamente
     @Test
     void quedanLetrasPorDescubrir_test() {
         assertTrue(Ahorcado.quedanLetrasPorDescubrir("elefante", ""));
@@ -46,6 +47,17 @@ class AhorcadoTest {
         assertFalse(Ahorcado.quedanLetrasPorDescubrir("elefante", "hjktnafle"));
     }
 
+    // Estos Tests están bien escritos, pero debes modificar el método muestraLetrasPorDescubrir para que se pasen correctamente
+    @Test
+    public void muestraLetrasPorDescubrir_test() {
+        assertEquals("-a-a", Ahorcado.muestraLetrasPorDescubrir("casa", "a"));
+        assertEquals("c---", Ahorcado.muestraLetrasPorDescubrir("casa", "c"));
+        assertEquals("c-s-", Ahorcado.muestraLetrasPorDescubrir("casa", "cefs"));
+        assertEquals("casa", Ahorcado.muestraLetrasPorDescubrir("casa", "cefsdea"));
+        assertEquals("-est----ll----", Ahorcado.muestraLetrasPorDescubrir("destornillador", "esltgs"));
+    }
+
+    // Debes completar los tests que se indican; el método letraEnPalabra funciona correctamente.
     @Test
     public void letraEnPalabra_test() {
         // Ejemplo de uso del método: Ahorcado.letraEnPalabra('a', "sarten") debe devolver true;
@@ -65,6 +77,7 @@ class AhorcadoTest {
         // @TODO Comprueba que la letra SI aparece en una cadena de tamaño mayor que 1 que sí la contiene en la últia posición.
     }
 
+    // Debes completar los tests que se indican; el método numErroresCometidos funciona correctamente.
     @Test
     public void numErroresCometidos_test() {
         // Ejemplo de uso del método: Ahorcado.numErroresCometidos("casa", "cdfga") debe devolver 3;
@@ -79,14 +92,4 @@ class AhorcadoTest {
         // @TODO Comprueba que devuelve 10 errores 
 
     }
-
-    @Test
-    public void muestraLetrasPorDescubrir_test() {
-        assertEquals("-a-a", Ahorcado.muestraLetrasPorDescubrir("casa", "a"));
-        assertEquals("c---", Ahorcado.muestraLetrasPorDescubrir("casa", "c"));
-        assertEquals("c-s-", Ahorcado.muestraLetrasPorDescubrir("casa", "cefs"));
-        assertEquals("casa", Ahorcado.muestraLetrasPorDescubrir("casa", "cefsdea"));
-        assertEquals("-est----ll----", Ahorcado.muestraLetrasPorDescubrir("destornillador", "esltgs"));
-    }
-
 }
