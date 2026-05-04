@@ -7,12 +7,12 @@ El objetivo es comprobar cómo cada vez que creamos los tests para un método y 
 **Secciones de de este documento**
 
 - [Juego del Ahorcado en Java](#juego-del-ahorcado-en-java)
-  - [Ficheros en el paquete:](#ficheros-en-el-paquete)
+  - [Ficheros en el paquete](#ficheros-en-el-paquete)
   - [Métodos dentro de Ahorcado.java](#métodos-dentro-de-ahorcadojava)
-  - [Ejemplo de ejecución del programa:](#ejemplo-de-ejecución-del-programa)
-  - [Ejercicios a realizar:](#ejercicios-a-realizar)
+  - [Ejemplo de ejecución del programa](#ejemplo-de-ejecución-del-programa)
+  - [Ejercicios a realizar](#ejercicios-a-realizar)
 
-## Ficheros en el paquete:
+## Ficheros en el paquete
 
 ```
 pom.xml
@@ -92,7 +92,7 @@ public static final String muestraLetrasPorDescubrir(final String palabra, final
 public static final int numErroresCometidos(final String palabra, final String letrasDichas)
 ```
 
-## Ejemplo de ejecución del programa:
+## Ejemplo de ejecución del programa
 
 ```bash
 Indique la posición de la palabra a adivinar (entre 0 y 3):
@@ -155,7 +155,7 @@ Escribe una letra: r
 :) Acertaste la palabra: ordenador
 ```
 
-## Ejercicios a realizar:
+## Ejercicios a realizar
 
 - Escribe los tests que faltan en el método `public void letraEnPalabra_test()` de _AhorcadoTest.java_
 - Escribe los tests que faltan en el método `public void numErroresCometidos_test` de _AhorcadoTest.java_
