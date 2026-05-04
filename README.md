@@ -4,7 +4,7 @@ Este programa implementa el juego del Ahorcado usando métodos susceptibles de s
 
 El objetivo es comprobar cómo cada vez que creamos los tests para un método y hacemos el correspondiente _commit_, se ejecuta automáticamente una _action_ en GitHub que hace el testeo automático.
 
-**Secciones de de este documento**
+**Secciones de este documento**
 
 - [Juego del Ahorcado en Java](#juego-del-ahorcado-en-java)
   - [Ficheros en el paquete](#ficheros-en-el-paquete)
